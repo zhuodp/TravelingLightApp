@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttonbackgroun">
+
+
+    <Button
+        android:id="@+id/tab_bottom_zhuye"
+        android:text="主页"
+        android:background="@drawable/zhuyebutton"
+        android:alpha="1"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        android:layout_marginRight="96dp" />
+
+    <Button
+        android:id="@+id/tab_bottom_picture"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:text="相簿"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@drawable/picturebtnbg"
+        android:alpha="1"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <Button
+        android:id="@+id/tab_bottom_map"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonmapbg"
+        android:alpha="1"
+        android:text="地图"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline" />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:text="日志"
+        android:background="@drawable/notebg"
+        android:alpha="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tab_bottom_setting"
+        android:layout_marginLeft="96dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline" />
+
+</android.support.constraint.ConstraintLayout>

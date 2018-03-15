@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/id_fragment_title"
+        android:name="com.example.a74021.project1.activity_and_fragment.TitleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <include
+        android:id="@+id/id_ly_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottombar"/>
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_ly_bottombar"
+        android:layout_below="@+id/id_fragment_title"
+        />
+
+</RelativeLayout>
